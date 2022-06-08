@@ -13,7 +13,6 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
 
 const TodoModal = props => {
-  //const [modalVisible, setModalVisible] = useState(false);
   return (
     <View>
       <Modal
@@ -75,16 +74,19 @@ const TodoModal = props => {
           />
           <View>
             <TouchableOpacity
-              onPress={() => props.handleAddTask(props.tasks, props.category)}>
+              onPress={() =>
+                props.handleAddUpdate(props.tasks, props.category)
+              }>
               <View style={styles.btn}>
                 <AntDesign name="check" size={24} color="white" />
               </View>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => props.onUpdate()}>
+
+            {/* <TouchableOpacity onPress={() => props.handleAddUpdate()}>
               <View style={styles.btn}>
                 <Entypo name="add-to-list" size={24} color="white" />
               </View>
-            </TouchableOpacity>
+            </TouchableOpacity> */}
           </View>
         </View>
       </Modal>

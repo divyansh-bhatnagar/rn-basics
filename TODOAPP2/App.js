@@ -52,26 +52,6 @@ const App = () => {
   }, []);
   console.log('taskItem', taskItem);
 
-  const handleAddTask = async (tasks, category) => {
-    console.log('task', tasks); //print the task which we're stored in state.
-
-    const categoryItem = categoryData.find(item => item.value === category);
-
-    console.log('categoryItem', categoryItem);
-    setModalVisible(false);
-    setTaskItem([
-      ...taskItem,
-      {id: taskId, task: tasks, category: categoryItem, check: false},
-    ]); //add the task to the array
-
-    Keyboard.dismiss(); //dismiss the keyboard.
-    setTaskId(taskId + 1); //increment the id by 1
-    setTasks(''); //clear the text input.
-    setCategory(null); //clear the dropdown.
-  };
-
-  // console.log('TaskItem', JSON.parse(taskItem));
-
   const renderList = ({item, index}) => {
     return (
       <View style={{flex: 1, flexDirection: 'row'}}>
@@ -97,17 +77,30 @@ const App = () => {
     setTaskItem(itemsCopy); //update the state.
   };
 
-  const onUpdate = () => {
+  const handleAddUpdate = (tasks, category) => {
+    console.log('task', tasks); //print the task which we're stored in state.
     const categoryItem = categoryData.find(item => item.value === category);
-    setTaskItem(
-      taskItem.map(todoItem => {
-        if (todoItem.id === editId) {
-          return {...todoItem, task: tasks, category: categoryItem};
-        } else {
-          return todoItem;
-        }
-      }),
-    );
+    console.log('categoryItem', categoryItem);
+
+    if (editId) {
+      setTaskItem(
+        taskItem.map(todoItem => {
+          if (todoItem.id === editId) {
+            return {...todoItem, task: tasks, category: categoryItem};
+          } else {
+            return todoItem;
+          }
+        }),
+      );
+    } else {
+      setTaskItem([
+        ...taskItem,
+        {id: taskId, task: tasks, category: categoryItem, check: false},
+      ]); //add the task to the array
+    }
+
+    Keyboard.dismiss(); //dismiss the keyboard.
+    setTaskId(taskId + 1); //increment the id by 1
     setTasks('');
     setCategory(null);
     setModalVisible(false);
@@ -178,14 +171,14 @@ const App = () => {
         behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
         style={styles.writeTask}>
         <TodoModal
-          onUpdate={onUpdate}
+          handleAddUpdate={handleAddUpdate}
           setCategory={setCategory}
           category={category}
           setTasks={setTasks}
           tasks={tasks}
           handleEdit={handleEdit}
           taskArray={taskItem}
-          handleAddTask={handleAddTask}
+          handleAddUpdate={handleAddUpdate}
           setModalVisible={setModalVisible}
           modalVisible={modalVisible}
           categoryData={categoryData}
@@ -238,8 +231,6 @@ const styles = StyleSheet.create({
     position: 'absolute',
     bottom: 60,
     width: '100%',
-    // flexDirection: 'Column',
-    // justifyContent: 'center',
     alignItems: 'center',
   },
 
