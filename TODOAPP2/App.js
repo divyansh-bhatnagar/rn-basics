@@ -52,13 +52,10 @@ const App = () => {
   }, []);
   console.log('taskItem', taskItem);
 
+  //add task to the Flatlist
   const renderList = ({item, index}) => {
     return (
       <View style={{flex: 1, flexDirection: 'row'}}>
-        {/* onPress={() => {
-           deleteTask(item);
-         }} */}
-
         <Task
           data={item}
           deleteTask={deleteTask}
@@ -77,11 +74,13 @@ const App = () => {
     setTaskItem(itemsCopy); //update the state.
   };
 
+  //handleEdit is the function to add and edit the tasks.
   const handleAddUpdate = (tasks, category) => {
     console.log('task', tasks); //print the task which we're stored in state.
     const categoryItem = categoryData.find(item => item.value === category);
     console.log('categoryItem', categoryItem);
-
+    //if editId is fetched, then edit the task.
+    //else add the task.
     if (editId) {
       setTaskItem(
         taskItem.map(todoItem => {
@@ -101,11 +100,12 @@ const App = () => {
 
     Keyboard.dismiss(); //dismiss the keyboard.
     setTaskId(taskId + 1); //increment the id by 1
-    setTasks('');
-    setCategory(null);
-    setModalVisible(false);
+    setTasks(''); //clear the text input.
+    setCategory(null); //clear the category.
+    setModalVisible(false); //close the modal.
   };
 
+  //handleEdit is the function to update the states when we edit the task.
   const handleEdit = ({id, task, category}) => {
     setCategory(category.value);
     setTasks(task);
@@ -117,6 +117,7 @@ const App = () => {
 
   console.log('modalVisible: ', modalVisible);
 
+  //handleCheck is the function to check the task.
   const handleCheck = id => {
     setTaskItem(
       taskItem.map(todoItem => {

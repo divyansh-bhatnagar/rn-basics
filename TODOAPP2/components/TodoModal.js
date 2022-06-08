@@ -31,6 +31,8 @@ const TodoModal = props => {
           }}
           onPress={() => {
             props.setModalVisible(false);
+            props.setCategory(null);
+            props.setTasks('');
           }}>
           <AntDesign name="close" size={25} color="#414C68" />
         </TouchableOpacity>
