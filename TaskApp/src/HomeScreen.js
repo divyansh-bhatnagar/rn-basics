@@ -75,7 +75,11 @@ export default function HomeScreen() {
                   navigation.navigate('detail', {data: element.item})
                 }>
                 <Image
-                  style={{height: 100, width: 100, margin: 5}}
+                  style={{
+                    height: 100,
+                    width: 100,
+                    margin: 5,
+                  }}
                   source={{uri: element.item.photo}}
                 />
 
