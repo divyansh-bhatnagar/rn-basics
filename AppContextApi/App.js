@@ -18,7 +18,7 @@ export default function App() {
   return (
     //Provider is the container for the context and passing value to child and super child
 
-    //passing getDay function to super child
+    //passing getDay function to super child.
     <GlobalInfo.Provider value={{appColor: color, getDay: getDay}}>
       <View>
         <Text style={{fontSize: 24}}>App screen {day}</Text>
