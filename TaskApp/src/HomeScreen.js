@@ -13,7 +13,7 @@ import DetailScreen from './DetailScreen';
 FlatListData = [
   {
     id: 1,
-    title: 'shoes',
+    title: 'Shoes',
     photo:
       'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
     description: 'The shoes are in multicolor and its unisex.',
@@ -102,8 +102,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   title: {
+    color: 'black',
     fontSize: 20,
     fontWeight: '500',
+    fontFamily: 'CreteRound_Italic',
   },
   text: {
     flex: 1,

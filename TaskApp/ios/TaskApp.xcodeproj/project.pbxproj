@@ -30,6 +30,15 @@
 		25952C2DB0E94B079A6CB181 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ADED0CF899364633B39FDDF4 /* Octicons.ttf */; };
 		B0F16FC7B4A247C496A70F25 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A65CC2DDE8614D3ABA472876 /* SimpleLineIcons.ttf */; };
 		D0C8819C204B4D1494E0C585 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC4E4237D1D247219690CE46 /* Zocial.ttf */; };
+		E31E22B9B8334556AE666B22 /* CreteRound-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4F7D6F0B3B94582A8233DD5 /* CreteRound-Italic.ttf */; };
+		30B406E23D8F4C7FABAC5897 /* CreteRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6E22C5A2ED24FEB9370CBDF /* CreteRound-Regular.ttf */; };
+		302B5A21A6B9481B80D305B8 /* Inconsolata-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E121336FE74347A4B91EEBB1 /* Inconsolata-Black.ttf */; };
+		516EDC5079A44FA5B71C91AD /* Inconsolata-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FC2BB7F6BB494E5D9436EA37 /* Inconsolata-Bold.ttf */; };
+		8DFB59930C64499BA665C203 /* Inconsolata-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8FCD6A21EB2C4DFFA910D545 /* Inconsolata-Light.ttf */; };
+		7F9D1D71ADDE4F04B85F25ED /* Inconsolata-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80E9410954D94BBEB1E155F7 /* Inconsolata-Medium.ttf */; };
+		B66643B9CB134248AB4E3088 /* Inconsolata-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26FCD298C5204FF4A14CA777 /* Inconsolata-Regular.ttf */; };
+		20C1D6AABDD04F6F8AEA3CA2 /* Inconsolata-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 166A903DD61144B2BAA15F6A /* Inconsolata-SemiBold.ttf */; };
+		043C2990723D4664BD429A53 /* ShadowsIntoLight-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32B716E1DEF54AF8958D06C8 /* ShadowsIntoLight-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +85,15 @@
 		ADED0CF899364633B39FDDF4 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		A65CC2DDE8614D3ABA472876 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		BC4E4237D1D247219690CE46 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F4F7D6F0B3B94582A8233DD5 /* CreteRound-Italic.ttf */ = {isa = PBXFileReference; name = "CreteRound-Italic.ttf"; path = "../assets/fonts/CreteRound-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D6E22C5A2ED24FEB9370CBDF /* CreteRound-Regular.ttf */ = {isa = PBXFileReference; name = "CreteRound-Regular.ttf"; path = "../assets/fonts/CreteRound-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E121336FE74347A4B91EEBB1 /* Inconsolata-Black.ttf */ = {isa = PBXFileReference; name = "Inconsolata-Black.ttf"; path = "../assets/fonts/Inconsolata-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FC2BB7F6BB494E5D9436EA37 /* Inconsolata-Bold.ttf */ = {isa = PBXFileReference; name = "Inconsolata-Bold.ttf"; path = "../assets/fonts/Inconsolata-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8FCD6A21EB2C4DFFA910D545 /* Inconsolata-Light.ttf */ = {isa = PBXFileReference; name = "Inconsolata-Light.ttf"; path = "../assets/fonts/Inconsolata-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		80E9410954D94BBEB1E155F7 /* Inconsolata-Medium.ttf */ = {isa = PBXFileReference; name = "Inconsolata-Medium.ttf"; path = "../assets/fonts/Inconsolata-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26FCD298C5204FF4A14CA777 /* Inconsolata-Regular.ttf */ = {isa = PBXFileReference; name = "Inconsolata-Regular.ttf"; path = "../assets/fonts/Inconsolata-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		166A903DD61144B2BAA15F6A /* Inconsolata-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inconsolata-SemiBold.ttf"; path = "../assets/fonts/Inconsolata-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		32B716E1DEF54AF8958D06C8 /* ShadowsIntoLight-Regular.ttf */ = {isa = PBXFileReference; name = "ShadowsIntoLight-Regular.ttf"; path = "../assets/fonts/ShadowsIntoLight-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +218,15 @@
 				ADED0CF899364633B39FDDF4 /* Octicons.ttf */,
 				A65CC2DDE8614D3ABA472876 /* SimpleLineIcons.ttf */,
 				BC4E4237D1D247219690CE46 /* Zocial.ttf */,
+				F4F7D6F0B3B94582A8233DD5 /* CreteRound-Italic.ttf */,
+				D6E22C5A2ED24FEB9370CBDF /* CreteRound-Regular.ttf */,
+				E121336FE74347A4B91EEBB1 /* Inconsolata-Black.ttf */,
+				FC2BB7F6BB494E5D9436EA37 /* Inconsolata-Bold.ttf */,
+				8FCD6A21EB2C4DFFA910D545 /* Inconsolata-Light.ttf */,
+				80E9410954D94BBEB1E155F7 /* Inconsolata-Medium.ttf */,
+				26FCD298C5204FF4A14CA777 /* Inconsolata-Regular.ttf */,
+				166A903DD61144B2BAA15F6A /* Inconsolata-SemiBold.ttf */,
+				32B716E1DEF54AF8958D06C8 /* ShadowsIntoLight-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -317,6 +344,15 @@
 				25952C2DB0E94B079A6CB181 /* Octicons.ttf in Resources */,
 				B0F16FC7B4A247C496A70F25 /* SimpleLineIcons.ttf in Resources */,
 				D0C8819C204B4D1494E0C585 /* Zocial.ttf in Resources */,
+				E31E22B9B8334556AE666B22 /* CreteRound-Italic.ttf in Resources */,
+				30B406E23D8F4C7FABAC5897 /* CreteRound-Regular.ttf in Resources */,
+				302B5A21A6B9481B80D305B8 /* Inconsolata-Black.ttf in Resources */,
+				516EDC5079A44FA5B71C91AD /* Inconsolata-Bold.ttf in Resources */,
+				8DFB59930C64499BA665C203 /* Inconsolata-Light.ttf in Resources */,
+				7F9D1D71ADDE4F04B85F25ED /* Inconsolata-Medium.ttf in Resources */,
+				B66643B9CB134248AB4E3088 /* Inconsolata-Regular.ttf in Resources */,
+				20C1D6AABDD04F6F8AEA3CA2 /* Inconsolata-SemiBold.ttf in Resources */,
+				043C2990723D4664BD429A53 /* ShadowsIntoLight-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

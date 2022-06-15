@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function DetailScreen({route}) {
   const {data} = route.params;
-  console.log('data:', data);
+  //console.log('data:', data);
   return (
     <View style={styles.container}>
       <Image style={styles.img} source={{uri: route.params.data.photo}} />
