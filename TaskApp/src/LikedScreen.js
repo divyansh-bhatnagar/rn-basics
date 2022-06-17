@@ -1,33 +1,50 @@
-import {StyleSheet, Text, View} from 'react-native';
-import React, {useEffect, useState} from 'react';
+import {StyleSheet, Text, View, Image, FlatList} from 'react-native';
+import React, {useEffect, useState, useContext} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import {Context} from '../components/context';
 
 export default function LikedScreen() {
-  const [likedItem, setLikedItem] = useState(null);
+  // const [likedItem, setLikedItem] = useState(null);
   const navigation = useNavigation(); //for navigating to other screens
 
-  useEffect(() => {
-    console.log('likedvalue:', likedValue);
-    const likedValue = async () => {
-      const likedData = await AsyncStorage.getItem('likeData'); //get data from AsyncStorage
-      console.log('likedData:', likedData);
-      setLikedItem(JSON.parse(likedData)); //set data to likedItem
-    };
-    //whenever the screen is Focused, run the likedValue function
-    const unsubscribe = navigation.addListener('focus', () => {
-      // The screen is focused
-      // Call any action
-      likedValue();
-    });
+  const {liked, setLiked} = useContext(Context);
 
-    // Return the function to unsubscribe from the event so it gets removed on unmount
-    return unsubscribe;
-  }, []);
+  const data = liked;
 
   return (
-    <View>
-      <Text>Hey: </Text>
+    <View
+      style={{
+        flex: 1,
+        alignItems: 'center',
+      }}>
+      <FlatList
+        data={data}
+        renderItem={({item}) => {
+          return (
+            <View
+              style={{
+                borderColor: 'grey',
+                borderBottomWidth: 1,
+                paddingVertical: 10,
+                marginVertical: 10,
+              }}>
+              <Image
+                style={{
+                  height: 100,
+                  width: 100,
+                  margin: 5,
+                }}
+                source={{uri: item.photo}}
+              />
+              {/* <Text>Hey: {item.id}</Text> */}
+              <Text>{item.title}</Text>
+
+              <Text>{item.description}</Text>
+            </View>
+          );
+        }}
+      />
     </View>
   );
 }

@@ -7,13 +7,17 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import BottomTab from './components/BottomTab';
 import AppNavigation from './components/AppNavigation';
 
+import ContextProvider from './components/context';
+
 const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <AppNavigation />
-    </NavigationContainer>
+    <ContextProvider>
+      <NavigationContainer>
+        <AppNavigation />
+      </NavigationContainer>
+    </ContextProvider>
   );
 }
 
